@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\Projetos para RZBR\ragezoneBR.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9DE0687-93EC-45BC-90FE-E34A4C06786C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>PBTool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\PBTool.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>rzBR.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mysql.data">
+      <HintPath>C:\Users\Guilherme\Downloads\mysql-connector-net-6.0.7-noinstall\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.visualstudio">
+      <HintPath>C:\Users\Guilherme\Downloads\mysql-connector-net-6.0.7-noinstall\mysql.visualstudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CashAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashAdmin.Designer.cs">
+      <DependentUpon>CashAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Creditos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creditos.Designer.cs">
+      <DependentUpon>Creditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpAdmin.Designer.cs">
+      <DependentUpon>ExpAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ids.Designer.cs">
+      <DependentUpon>ids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index.Designer.cs">
+      <DependentUpon>index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Painel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painel.Designer.cs">
+      <DependentUpon>Painel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PainelADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PainelADMIN.Designer.cs">
+      <DependentUpon>PainelADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatenteAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatenteAdmin.Designer.cs">
+      <DependentUpon>PatenteAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="skype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="skype.Designer.cs">
+      <DependentUpon>skype.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CashAdmin.resx">
+      <DependentUpon>CashAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creditos.resx">
+      <DependentUpon>Creditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpAdmin.resx">
+      <DependentUpon>ExpAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="ids.resx">
+      <DependentUpon>ids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="index.resx">
+      <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painel.resx">
+      <DependentUpon>Painel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PainelADMIN.resx">
+      <DependentUpon>PainelADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatenteAdmin.resx">
+      <DependentUpon>PatenteAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="skype.resx">
+      <DependentUpon>skype.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="rzBR.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
